@@ -20,7 +20,6 @@ js/main.js         boot: the order everything above happens in
 js/i18n/{en,de,fr}.json    every word of visible copy on the home page
 fonts/             self-hosted woff2; no third-party requests, ever
 pdf/               session booklets linked from the home page
-src/               authoring originals, mostly untracked (see .gitignore)
 ```
 
 ## How the two halves fit together
@@ -132,17 +131,6 @@ Then <http://localhost:8000/>. Append `?lang=de` or `?lang=fr` to pin a
 language; the switcher writes that parameter itself once you use it. Note that
 a choice is remembered in `localStorage`, so clear it if you want to test the
 browser-language detection.
-
-## The share card
-
-`og-image.jpg` is generated, not drawn: `src/make-og-image.py` typesets it from
-the same woff2 files the site serves, so it cannot drift from the page it links
-to. Rerun it when the mission line changes.
-
-```bash
-pip install pillow fonttools brotli
-python3 src/make-og-image.py
-```
 
 ## Things worth knowing before changing them
 
