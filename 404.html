@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- GitHub Pages serves this file for any address it cannot match, at any
+     depth: /nope, /a/b/c/nope. Every path below is therefore root-absolute —
+     a relative one would resolve against the missing directory and 404 too.
+     English only, like poster.html: an error page is not worth a locale fetch
+     that may itself be the thing failing. -->
+<title>Page not found — Interactive.li</title>
+<meta name="description" content="This address does not exist on interactive.li.">
+<meta name="theme-color" content="#fbf8f2">
+<meta name="robots" content="noindex, follow">
+<meta name="author" content="Interactive.li">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<link rel="preload" href="/fonts/PlayfairDisplay-400-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/SourceSerif4-400-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/fonts.css">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <span class="brand"><a href="/">Interactive.li</a></span>
+  </div>
+</header>
+
+<main id="main" class="wrap" tabindex="-1">
+  <article class="content">
+
+    <h1 class="headline headline--article">This address is outside the model's boundaries.</h1>
+
+    <hr class="flourish" aria-hidden="true">
+
+    <p class="pitch">The address you followed isn't one of ours, or it has moved. The home page lists everything we run.</p>
+
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="mission">Bringing the models behind public decisions within everyone's reach.</p>
+    <p class="copyright">© <span id="year">2026</span> Interactive.li</p>
+  </div>
+</footer>
+
+<!-- Only the year is scripted; the page reads fine if this never runs. -->
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

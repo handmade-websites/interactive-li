@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Text below is the English fallback, and it is what a crawler sees before
+     scripts run. The live copy lives in js/i18n/*.json -->
+<title data-i18n="meta.title">Interactive.li — Bringing the models behind public decisions within everyone's reach.</title>
+<meta name="description" data-i18n-attr="content:meta.description" content="Interactive.li turns the models behind energy, economic, environmental and health policy into live sessions in which participants take the decisions themselves and see the trade-offs each choice involves.">
+<meta name="theme-color" content="#fbf8f2">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="author" content="Interactive.li">
+
+<!-- Canonical tracks the URL actually requested, not the auto-detected
+     language: auto-detection is personalisation, not a distinct page.
+     js/main.js appends ?lang= only when the URL already carries one. -->
+<!-- English is the default language, so ?lang=en and the bare URL are the same
+     page: en points at the bare URL rather than adding a second address for
+     identical copy. main.js keeps canonical in step. -->
+<link rel="canonical" href="https://interactive.li/">
+<link rel="alternate" hreflang="en" href="https://interactive.li/">
+<link rel="alternate" hreflang="de" href="https://interactive.li/?lang=de">
+<link rel="alternate" hreflang="fr" href="https://interactive.li/?lang=fr">
+<link rel="alternate" hreflang="x-default" href="https://interactive.li/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Interactive.li">
+<meta property="og:url" content="https://interactive.li/">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" data-i18n-attr="content:meta.title" content="Interactive.li — Bringing the models behind public decisions within everyone's reach.">
+<meta property="og:description" data-i18n-attr="content:meta.description" content="Interactive.li turns the models behind energy, economic, environmental and health policy into live sessions in which participants take the decisions themselves and see the trade-offs each choice involves.">
+
+<!-- A typographic card carrying the wordmark and the mission line, so the alt
+     text is simply the title. 1200×630 — the size every scraper crops to.
+     Dimensions are declared so the first share renders immediately instead of
+     waiting for the scraper to fetch the file. Rebuild: see README. -->
+<meta property="og:image" content="https://interactive.li/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" data-i18n-attr="content:meta.title" content="Interactive.li — Bringing the models behind public decisions within everyone's reach.">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" data-i18n-attr="content:meta.title" content="Interactive.li — Bringing the models behind public decisions within everyone's reach.">
+<meta name="twitter:description" data-i18n-attr="content:meta.description" content="Interactive.li turns the models behind energy, economic, environmental and health policy into live sessions in which participants take the decisions themselves and see the trade-offs each choice involves.">
+<meta name="twitter:image" content="https://interactive.li/og-image.jpg">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<!-- Self-hosted fonts: no third-party requests, so no preconnect needed. -->
+<link rel="preload" href="fonts/PlayfairDisplay-400-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/SourceSerif4-400-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Translation happens in the browser, so without scripting the switcher
+     cannot deliver what it promises: hide it rather than offer a dead control.
+     The sitemap and the hreflang tags above still expose every language to
+     crawlers. <noscript> settles this in the parser, so no script has to run
+     to get it right. Must come after style.css to win on order. -->
+<noscript><style>.switcher { display: none; }</style></noscript>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Interactive.li",
+  "url": "https://interactive.li/",
+  "email": "contact@interactive.li",
+  "description": "Interactive.li turns the models behind energy, economic, environmental and health policy into live sessions in which participants take the decisions themselves and see the trade-offs each choice involves.",
+  "knowsLanguage": ["en", "de", "fr"]
+}
+</script>
+
+</head>
+<body>
+
+<a class="skip-link" href="#main" data-i18n="a11y.skip_link">Skip to content</a>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <span class="brand"><a href="/">Interactive.li</a></span>
+
+    <nav class="site-nav" aria-label="Sections" data-i18n-attr="aria-label:a11y.section_nav_label">
+      <a href="#experiences" data-i18n="nav.experiences">Simulations</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <!--
+      Language links, not buttons: each one is a real URL for a real variant,
+      which means they can be opened in a new tab, shared, and crawled.
+      main.js intercepts the click and swaps the copy in place.
+    -->
+    <nav class="switcher" aria-label="Language" data-i18n-attr="aria-label:a11y.language_switcher_label">
+      <a class="lang-link" href="?lang=en" hreflang="en" lang="en" data-lang="en" aria-current="true">EN</a>
+      <span class="switcher-sep" aria-hidden="true">·</span>
+      <a class="lang-link" href="?lang=de" hreflang="de" lang="de" data-lang="de">DE</a>
+      <span class="switcher-sep" aria-hidden="true">·</span>
+      <a class="lang-link" href="?lang=fr" hreflang="fr" lang="fr" data-lang="fr">FR</a>
+    </nav>
+  </div>
+</header>
+
+<!-- tabindex="-1" so the skip link actually moves focus here: several browsers
+     scroll to a target that cannot hold focus without handing focus to it, which
+     leaves the keyboard where it was. -->
+<main id="main" class="wrap" tabindex="-1">
+  <article class="content">
+
+    <h1 class="headline" data-i18n="hero.headline">Bringing the models behind public decisions within everyone's reach.</h1>
+
+    <!-- Purely decorative: hidden from assistive tech so it is not announced
+         as a thematic break. -->
+    <hr class="flourish" aria-hidden="true">
+
+    <p class="hook" data-i18n="hero.hook">Interactive.li turns the models behind energy, economic, environmental and health policy into live sessions in which participants take the decisions themselves, compare their results, and see the trade-offs each choice involves.</p>
+
+    <!-- Whole line is the link: the i18n engine writes text, not markup, so a
+         translated sentence cannot carry an anchor part-way through it.
+
+         The badge is the one the session list uses, warning a German or French
+         reader that poster.html is not translated. It stays empty in English —
+         hero.poster_lang is "" there, and .exp-tag:empty removes it — because
+         an English page needs no label saying it is in English. -->
+    <p class="pitch"><a href="poster.html" hreflang="en" data-i18n="hero.poster_link">Presented at the 25th Austrian Climate Day, Innsbruck, 23–25 April 2025</a><span class="exp-tag" data-i18n="hero.poster_lang"></span></p>
+
+    <p class="pitch" data-i18n="hero.pitch">Energy, economic, environmental and health policy all rest on models that are costly to run and, in practice, used only by specialists — invisible to the people the decisions affect. Interactive.li wraps an interactive layer around such models, whatever the subject. Small groups work from their own phones, tablets or laptops: briefed on a challenge, they discuss it and submit a decision, and the model answers in the terms that matter for that field — cost, risk, emissions, health outcomes, the reactions of those involved. Game mechanics — objectives, scoring, teams — focus the discussion: participants cooperate within their team and compete with the others. They then compare results and debrief, with generative AI turning everyone's answers into something a facilitator can use on the spot. Nothing here predicts the future or names a right answer. What participants leave with is a sense of the constraints, and of what every choice gains and gives up.</p>
+
+    <!--
+      THE SESSION LIST LIVES HERE. This markup is what renders: the <li>
+      elements below decide which simulations appear and in what order, and
+      nothing rewrites them. To reorder, move an <li>. To remove one, delete
+      it. To add one, copy an <li> and give it a new slug.
+
+      The slug is the middle part of the data-i18n paths — "generations" in
+      experiences.items.generations.hook. Every slug used here needs matching
+      entries in all three of js/i18n/{en,de,fr}.json; the English text sitting
+      in the markup is the fallback shown before the locale file loads, and to
+      anyone whose scripts never run.
+
+      A session with no booklet is just a title with no <a> and no badge, which
+      is how one whose PDF is not published yet still gets listed. A session
+      with a booklet wraps the title in the link, and carries link_label so the
+      format is part of the link's accessible name — the visible badge is
+      hidden from assistive tech to avoid announcing it twice.
+    -->
+    <section class="experiences" id="experiences">
+      <h2 class="section-title" data-i18n="experiences.headline">Simulations</h2>
+
+      <p class="section-intro" data-i18n="experiences.intro">A growing set of ready-to-run simulations, each built around a working model and delivered live — from briefing and group discussion through to a shared debriefing.</p>
+
+      <ul class="exp-list">
+        <li class="exp">
+          <h3 class="exp-title"><a href="pdf/generations.pdf" data-i18n="experiences.items.generations.title" data-i18n-attr="aria-label:experiences.items.generations.link_label" aria-label="Generations (PDF, English)">Generations</a><span class="exp-tag" data-i18n="experiences.items.generations.pdf_label" aria-hidden="true">PDF, English</span></h3>
+          <p class="exp-hook" data-i18n="experiences.items.generations.hook">Steer a decades-long programme to site a deep geological repository for radioactive waste, with stakeholder groups simulated by a large language model responding at every stage. Points are won by meeting expectations; a single veto ends the programme.</p>
+        </li>
+        <li class="exp">
+          <h3 class="exp-title" data-i18n="experiences.items.epidemic.title">Epidemic Crisis Manager</h3>
+          <p class="exp-hook" data-i18n="experiences.items.epidemic.hook">Act as a regional policymaker containing a fast-spreading outbreak, with linked epidemiological and economic models showing round by round what each measure buys and what it costs.</p>
+        </li>
+        <li class="exp">
+          <h3 class="exp-title" data-i18n="experiences.items.beyond_coal.title">Beyond Coal</h3>
+          <p class="exp-hook" data-i18n="experiences.items.beyond_coal.hook">Design the future electricity mix of a coal-dependent country, then submit it to an energy-system optimiser that reports back on cost, emissions and reliability — and shows how hard all three are to secure at once.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="section-title" data-i18n="contact.headline">Let's talk.</h2>
+
+      <p class="section-intro" data-i18n="contact.body">Write to us with your questions, or to arrange a demonstration of our tools.</p>
+
+      <!-- The address is the label, not "Get in touch": a mailto: does nothing
+           at all in a browser with no mail app registered, which is most
+           webmail users. Spelling it out means those visitors can read and copy
+           it instead of clicking into silence. No data-i18n here — an address
+           is the same in every language, and the section heading and body copy
+           already make the invitation twice. -->
+      <div class="actions">
+        <a class="btn" href="mailto:contact@interactive.li">contact@interactive.li</a>
+      </div>
+    </section>
+
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="mission" data-i18n="footer.mission">Bringing the models behind public decisions within everyone's reach.</p>
+    <p class="copyright">© <span id="year">2026</span> Interactive.li</p>
+  </div>
+</footer>
+
+<!-- Load order is declaration order: main.js is the only one that acts, and it
+     waits for DOMContentLoaded before calling into the other three. -->
+<script src="js/i18n.js"></script>
+<script src="js/seo.js"></script>
+<script src="js/switcher.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

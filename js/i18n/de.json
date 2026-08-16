@@ -1,0 +1,57 @@
+{
+  "_note": "Alle Texte von index.html außer der Reihenfolge der Simulationsliste. Welche Simulationen erscheinen und in welcher Reihenfolge, bestimmen die <li>-Elemente in index.html; diese Datei liefert nur deren Texte, adressiert über den Slug im jeweiligen data-i18n-Pfad (experiences.items.<slug>.hook). Die Schlüssel müssen in en/de/fr identisch sein; ein Schlüssel ohne Inhalt trägt daher einen leeren String, statt zu fehlen — nur so wird das Element beim Sprachwechsel wieder geleert. poster.html und 404.html gibt es nur auf Englisch.",
+
+  "meta": {
+    "title": "Interactive.li — Die Modelle hinter politischen Entscheidungen für alle zugänglich machen.",
+    "description": "Interactive.li macht die Modelle hinter Energie-, Wirtschafts-, Umwelt- und Gesundheitspolitik in Live-Formaten erfahrbar: Die Teilnehmenden entscheiden selbst und erleben die Zielkonflikte jeder Wahl."
+  },
+
+  "a11y": {
+    "skip_link": "Zum Inhalt springen",
+    "language_switcher_label": "Sprache",
+    "section_nav_label": "Abschnitte"
+  },
+
+  "nav": {
+    "experiences": "Simulationen",
+    "contact": "Kontakt"
+  },
+
+  "hero": {
+    "headline": "Die Modelle hinter politischen Entscheidungen für alle zugänglich machen.",
+    "hook": "Interactive.li macht die Modelle hinter Energie-, Wirtschafts-, Umwelt- und Gesundheitspolitik in Live-Formaten erfahrbar: Die Teilnehmenden entscheiden selbst, vergleichen ihre Ergebnisse und erleben die Zielkonflikte, die in jeder Wahl stecken.",
+    "poster_link": "Vorgestellt beim 25. Österreichischen Klimatag, Innsbruck, 23.–25. April 2025",
+    "poster_lang": "Englisch",
+    "pitch": "Energie-, Wirtschafts-, Umwelt- und Gesundheitspolitik stützen sich auf Modelle, die rechenintensiv sind und in der Praxis nur von Fachleuten bedient werden — für die Betroffenen bleiben sie unsichtbar. Interactive.li umgibt solche Modelle mit einer interaktiven Ebene, unabhängig vom Thema. Kleine Gruppen arbeiten auf dem eigenen Smartphone, Tablet oder Laptop: Ein Briefing stellt die Aufgabe, die Gruppe diskutiert und entscheidet, und das Modell antwortet in den Größen, auf die es im jeweiligen Feld ankommt — Kosten, Risiken, Emissionen, gesundheitliche Folgen, Reaktionen der Anspruchsgruppen. Spielmechaniken — Ziele, Punkte, Teams — fokussieren die Diskussion: Innerhalb der Teams wird zusammengearbeitet, zwischen ihnen konkurriert. Danach vergleichen die Gruppen ihre Ergebnisse und werten gemeinsam aus; eine generative KI macht dabei aus den Antworten aller Teilnehmenden etwas, mit dem sich sofort weiterarbeiten lässt. Nichts davon sagt die Zukunft voraus oder nennt die richtige Antwort. Was bleibt, ist ein Gespür für die Rahmenbedingungen und dafür, was man mit jeder Entscheidung gewinnt und was man aufgibt."
+  },
+
+  "experiences": {
+    "headline": "Simulationen",
+    "intro": "Eine wachsende Auswahl einsatzbereiter Simulationen, jede um ein reales Modell herum gebaut und live durchgeführt — vom Briefing über die Gruppendiskussion bis zur gemeinsamen Auswertung.",
+    "items": {
+      "generations": {
+        "title": "Generations",
+        "hook": "Steuern Sie ein über Jahrzehnte angelegtes Programm zur Standortsuche für ein geologisches Tiefenlager, während Anspruchsgruppen, simuliert von einem großen Sprachmodell, auf jede Etappe reagieren. Punkte gibt es für erfüllte Erwartungen; ein einziges Veto beendet das Programm.",
+        "pdf_label": "PDF, Englisch",
+        "link_label": "Generations (PDF, Englisch)"
+      },
+      "epidemic": {
+        "title": "Epidemic Crisis Manager",
+        "hook": "Übernehmen Sie auf regionaler Ebene die Verantwortung für die Eindämmung eines Ausbruchs: Gekoppelte epidemiologische und ökonomische Modelle zeigen Runde für Runde, was jede Maßnahme bringt und was sie kostet."
+      },
+      "beyond_coal": {
+        "title": "Beyond Coal",
+        "hook": "Gestalten Sie den künftigen Strommix eines kohleabhängigen Landes und legen Sie ihn einem Energiesystem-Optimierer vor: Er liefert Kosten, Emissionen und Versorgungssicherheit zurück — und zeigt, wie schwer alle drei zugleich zu erreichen sind."
+      }
+    }
+  },
+
+  "contact": {
+    "headline": "Sprechen wir miteinander.",
+    "body": "Schreiben Sie uns Ihre Fragen oder vereinbaren Sie eine Demonstration unserer Werkzeuge."
+  },
+
+  "footer": {
+    "mission": "Die Modelle hinter politischen Entscheidungen für alle zugänglich machen."
+  }
+}

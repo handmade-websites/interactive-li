@@ -1,0 +1,57 @@
+{
+  "_note": "Every word on index.html except the session list's order. Which simulations appear, and in what sequence, is decided by the <li> elements in index.html; this file supplies their words, found by the slug in each data-i18n path (experiences.items.<slug>.hook). Keys must match across en/de/fr, so a key with nothing to show carries an empty string rather than being dropped — that is what clears the node when the visitor switches back. poster.html and 404.html are English only and have no copy here.",
+
+  "meta": {
+    "title": "Interactive.li — Bringing the models behind public decisions within everyone's reach.",
+    "description": "Interactive.li turns the models behind energy, economic, environmental and health policy into live sessions in which participants take the decisions themselves and see the trade-offs each choice involves."
+  },
+
+  "a11y": {
+    "skip_link": "Skip to content",
+    "language_switcher_label": "Language",
+    "section_nav_label": "Sections"
+  },
+
+  "nav": {
+    "experiences": "Simulations",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "headline": "Bringing the models behind public decisions within everyone's reach.",
+    "hook": "Interactive.li turns the models behind energy, economic, environmental and health policy into live sessions in which participants take the decisions themselves, compare their results, and see the trade-offs each choice involves.",
+    "poster_link": "Presented at the 25th Austrian Climate Day, Innsbruck, 23–25 April 2025",
+    "poster_lang": "",
+    "pitch": "Energy, economic, environmental and health policy all rest on models that are costly to run and, in practice, used only by specialists — invisible to the people the decisions affect. Interactive.li wraps an interactive layer around such models, whatever the subject. Small groups work from their own phones, tablets or laptops: briefed on a challenge, they discuss it and submit a decision, and the model answers in the terms that matter for that field — cost, risk, emissions, health outcomes, the reactions of those involved. Game mechanics — objectives, scoring, teams — focus the discussion: participants cooperate within their team and compete with the others. They then compare results and debrief, with generative AI turning everyone's answers into something a facilitator can use on the spot. Nothing here predicts the future or names a right answer. What participants leave with is a sense of the constraints, and of what every choice gains and gives up."
+  },
+
+  "experiences": {
+    "headline": "Simulations",
+    "intro": "A growing set of ready-to-run simulations, each built around a working model and delivered live — from briefing and group discussion through to a shared debriefing.",
+    "items": {
+      "generations": {
+        "title": "Generations",
+        "hook": "Steer a decades-long programme to site a deep geological repository for radioactive waste, with stakeholder groups simulated by a large language model responding at every stage. Points are won by meeting expectations; a single veto ends the programme.",
+        "pdf_label": "PDF, English",
+        "link_label": "Generations (PDF, English)"
+      },
+      "epidemic": {
+        "title": "Epidemic Crisis Manager",
+        "hook": "Act as a regional policymaker containing a fast-spreading outbreak, with linked epidemiological and economic models showing round by round what each measure buys and what it costs."
+      },
+      "beyond_coal": {
+        "title": "Beyond Coal",
+        "hook": "Design the future electricity mix of a coal-dependent country, then submit it to an energy-system optimiser that reports back on cost, emissions and reliability — and shows how hard all three are to secure at once."
+      }
+    }
+  },
+
+  "contact": {
+    "headline": "Let's talk.",
+    "body": "Write to us with your questions, or to arrange a demonstration of our tools."
+  },
+
+  "footer": {
+    "mission": "Bringing the models behind public decisions within everyone's reach."
+  }
+}
