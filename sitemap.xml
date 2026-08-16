@@ -4,38 +4,42 @@
 
   <!-- Every URL lists the full set of alternates, including itself, as the
        hreflang spec requires. The bare URL is both the x-default and the
-       English variant: English is the default copy, so ?lang=en would be a
-       second address for a page identical to this one. -->
+       English variant: English is the copy index.html itself carries, so it
+       needs no directory of its own.
+
+       Each of the three is a separate file with its own copy in the markup and
+       a canonical pointing at itself; the same annotations appear in each
+       page's head. Both halves have to agree, or the set is discarded. -->
 
   <url>
     <loc>https://interactive.li/</loc>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://interactive.li/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://interactive.li/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://interactive.li/?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interactive.li/?lang=fr"/>
-    <lastmod>2026-08-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://interactive.li/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://interactive.li/fr/"/>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://interactive.li/?lang=de</loc>
+    <loc>https://interactive.li/de/</loc>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://interactive.li/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://interactive.li/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://interactive.li/?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interactive.li/?lang=fr"/>
-    <lastmod>2026-08-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://interactive.li/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://interactive.li/fr/"/>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://interactive.li/?lang=fr</loc>
+    <loc>https://interactive.li/fr/</loc>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://interactive.li/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://interactive.li/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://interactive.li/?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interactive.li/?lang=fr"/>
-    <lastmod>2026-08-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://interactive.li/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://interactive.li/fr/"/>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>

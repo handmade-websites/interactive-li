@@ -1,9 +1,9 @@
 User-agent: *
 Allow: /
 
-# Three pages — the home page in three languages, poster.html in English, and
-# 404.html, which is noindex; nothing here is private, the PDFs included.
-# JSON locale files and CSS/JS must stay crawlable so search engines can
-# render the home page exactly as a visitor sees it.
+# Five pages — the home page in English, German and French, poster.html in
+# English, and 404.html, which is noindex; nothing here is private, the PDFs
+# included. CSS and fonts must stay crawlable so search engines can render each
+# page exactly as a visitor sees it.
 
 Sitemap: https://interactive.li/sitemap.xml
